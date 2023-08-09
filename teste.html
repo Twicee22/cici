@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="botaoBoasVindas">Clique Aqui</button>
+    <p id="mensagem"></p>
+    
+    <button id="botaoAdicionarItem">Adicionar Item à Lista</button>
+    <ul id="lista"></ul>
+
+    <div id="elementoMudancaCor" style="width: 200px; height: 200px; background-color: lightblue;"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#botaoBoasVindas").click(function() {
+                $("#mensagem").text("Bem-vindo! Você clicou no botão de boas-vindas.");
+            });
+
+            $("#botaoAdicionarItem").click(function() {
+                const novoConteudo = prompt("Digite o conteúdo do novo item:");
+                if (novoConteudo) {
+                    $("#lista").append(`<li>${novoConteudo}</li>`);
+                }
+            });
+
+            $("#elementoMudancaCor").mouseover(function() {
+                $(this).css("background-color", "lightgreen");
+            });
+
+            $("#elementoMudancaCor").mouseout(function() {
+                $(this).css("background-color", "lightblue");
+            });
+
+            $("#elementoMudancaCor").click(function() {
+                alert("Você clicou no quadrado!");
+            });
+        });
+    </script>
+</body>
+</html>
