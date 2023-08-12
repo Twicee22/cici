@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de Interiores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Design de interiores</h1>
+    
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services" class="cta-button">Serviços</a></li>
+                <li><a href="#contact" class="cta-button">Entre em Contato</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>No que pode estar te ajudando?</h1>
+        <h3>🌟 Descubra um Novo Mundo de Possibilidades com o Design de Interiores! 🌟<br>
+
+            Você já imaginou viver em um espaço que reflete perfeitamente sua personalidade, estilo e aspirações? O design de interiores
+             é muito mais do que simplesmente escolher móveis e cores; é a arte de transformar ambientes em lugares que contam histórias, despertam emoções e elevam sua qualidade de vida.</h3>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>
+            🌟 Conheça Nossa Equipe de Design de Interiores Excepcional! 🌟
+            
+            Na nossa equipe, a paixão pelo design de interiores se une à expertise técnica para criar espaços verdadeiramente extraordinários. Cada membro da nossa equipe é um profissional dedicado, comprometido em transformar sua visão em realidade e elevar cada projeto a um nível superior de excelência.<br>
+            
+            🎨 Criatividade Ilimitada:
+            Nossos designers são artistas da imaginação, prontos para pensar fora da caixa e trazer soluções inovadoras para cada desafio de design. Eles se esforçam para criar ambientes únicos que reflitam individualidade e estilo, resultando em espaços surpreendentes e inspiradores.<br>
+            
+            📐 Precisão Técnica:
+            Além da criatividade, a precisão é fundamental. Nossa equipe combina criatividade com um profundo conhecimento técnico em arquitetura, ergonomia, materiais e construção. Cada projeto é cuidadosamente planejado para otimizar o uso do espaço, garantindo que forma e função caminhem lado a lado.<br>
+            
+            🤝 Colaboração e Compreensão:
+            Entendemos que cada cliente é único, com necessidades e desejos específicos. Nossa equipe é especializada em ouvir atentamente e colaborar com você para entender seus objetivos e visão. 
+            Transformamos essa compreensão em um plano detalhado, assegurando que o resultado final seja uma expressão autêntica de quem você é.</p>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="service"> 
+            <h3>Criamos projetos sob medida para atender às suas necessidades e gostos, transformando espaços em lugares especiais.</h3>
+            <img src="cici.jpg" alt="Design de Interiores" width="700" height="400">
+            <img src="cr7.jpg" alt="Design de Interiores" width="700" height="400">
+            <h3>Design Personalizado para combinar com você </h3>
+           
+        </div>
+        <!-- Outros serviços podem ser adicionados aqui -->
+    </section>
+
+    <section id="contact">
+        <hr 
+
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="tel" id="phone" placeholder="Telefone" required>
+            <button type="submit" class="cta-button">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Design+. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+/* Estilos gerais */
+body {
+    font-family: Bold italic , double
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #ffffff; /* Define a cor do texto para branco (#fff) */
+}
+
+ hr {
+            height: 7px; /* Defina a altura desejada, por exemplo, 3px */
+            background-color: #ffffff; /* Defina a cor da linha */
+            border: none; /* Remova a borda padrão */
+            margin: 20px 0; /* Adicione margens superior e inferior para espaçamento */
+        }
+
+header, nav, section, footer {
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Define a cor do texto para cinza (#) */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Define a cor do link para cinza (#333) */
+}
+
+nav a.active {
+    font-weight: Bold italic , double
+}
+
+/* Estilos específicos da seção de serviços */
+#services {
+    background-color: #494646;
+    margin-top: 30px;
+}
+
+.service {
+    background-color: #494646;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+   
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header, nav, section, footer {
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin-right: 10px;
+    }
+    
+    .service {
+        margin: 10px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contact-form");
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        // Validação do formulário e envio dos dados podem ser implementados aqui
+        
+        alert("Formulário enviado com sucesso!");
+        contactForm.reset();
+    });
+});
+</script>
